@@ -1,0 +1,234 @@
+$backcolor: black
+
+body
+  font-family: 'Roboto', sans-serif
+  margin: 0
+  button:hover
+    background-color: black
+    color: white
+
+.content
+  width: 100%
+  background-color: white
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  margin: 15px 0
+  float: left
+
+.top
+  font-family: "Minion Pro"
+  text-align: center
+  color: white
+  background-color: $backcolor
+  position: relative
+  padding: 70px
+
+.top-icons
+  position: absolute
+  left: 10px
+  top: 10px
+  padding: 0
+  img
+    background-color: #fff
+    border-radius: 30px
+    box-shadow: 0 0 0 5px #000 inset
+    float: left
+    margin-right: 5px
+
+.container
+  position: relative
+
+.text-block
+  position: absolute
+  padding: 40px 20px
+  top: 63%
+  left: 45.5%
+  font-size: 70px
+  color: black
+
+@mixin astheme($background-color:black)
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+@mixin asides
+  width: 100%
+  float: right
+  margin-left: 0
+  margin-top: 20px
+
+aside0
+  @include astheme
+  @include asides
+
+aside1
+  @include astheme($background-color: white)
+  @include asides
+
+
+ul.separator
+  list-style: none
+  padding: 0
+  width: 100%
+  li
+    padding-top: .5em
+  li::after
+    content: ""
+    display: block
+    border-bottom: 1px solid #CCC
+    padding-top: 6rem
+  li:last-child::after
+    padding-bottom: 10px
+    display: none
+
+
+aside2
+  @include astheme($background-color: white)
+  @include asides
+
+
+
+aside3
+  @include astheme($background-color: white)
+  @include asides
+
+  padding-bottom: 20px
+
+
+a1
+  padding: 5px
+  background-color: #e7e7e7
+  color: black
+  border: 2px solid #e7e7e7
+  margin: 5px
+  align-self: center
+  float: left
+
+
+a1:hover
+  background-color: black
+  color: white
+  border-color: black
+
+
+aside4
+  @include astheme($background-color: white)
+  @include asides
+  padding-bottom: 20px
+
+aside5
+  @include astheme($background-color: white)
+  @include asides
+  padding-bottom: 20px
+
+
+.icon
+  margin-left: 20px
+  margin-top: 20px
+
+
+aside6
+  @include astheme($background-color: white)
+  @include asides
+  padding-bottom: 20px
+
+
+h3
+  text-align: center
+
+
+input.subscribe
+  text-align: left
+  border-style: double
+  padding: 0%
+  margin-left: 30px
+  margin-right: 30px
+  margin-bottom: 30px
+  margin-top: 10px
+
+
+.input2
+  text-align: left
+  float: left
+  padding-left: 25px
+
+
+br
+  font-family: "Minion Pro"
+
+.read-button
+  font-size: 20px
+  background-color: white
+  color: $backcolor
+  border: 2px solid #e7e7e7
+  margin-bottom: 10px
+  margin-left: 10px
+  align-self: center
+
+
+footer
+  margin-bottom: 5px
+  text-align: center
+  font-family: "Minion Pro"
+  position: static
+
+.left
+  width: 65%
+  float: left
+  margin-right: 5%
+  padding: 10px 30px
+  box-sizing: border-box
+
+.right
+  width: 30%
+  float: right
+  padding: 10px 30px
+  box-sizing: border-box
+
+.widget
+  h3
+    margin: 0
+    background-color: black
+    color: white
+    padding: 20px
+    text-align: left
+
+.footer
+  display: block
+  width: 100%
+  float: left
+
+.separator
+  li
+    img
+      width: 72px
+      margin-right: 13px
+    .content-group
+      float: right
+      width: calc(100% - 100px)
+
+    .title
+      float: left
+      margin-top: 10px
+      margin-left: 10px
+    .description
+      float: left
+      margin-left: 75px
+      font-size: small
+      color: #666
+
+.like-button
+  float: right
+  margin-right: 20px
+  width: 200px
+  font-size: 15px
+
+
+@media only screen and (max-width: 600px)
+  .left, .right
+    width: 90%
+    margin: 0
+    padding: 0
+  .left
+    margin-left: 5%
+  .right
+    margin-left: 5%
+    float: left
+
